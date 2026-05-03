@@ -44,13 +44,13 @@ This website is a frontend presentation demo. The real invoice extraction, valid
 
 ## Output Files
 
-- `all_results.csv`
-- `final_results.csv`
-- `clean_invoices.csv`
-- `suspicious_invoices.csv`
-- `failed_files.csv`
-- `aggregate_summary.csv`
-- `invoice_automation_final_outputs.zip` when exported by the notebook
+- `outputs/all_results.csv`
+- `outputs/final_results.csv`
+- `outputs/clean_invoices.csv`
+- `outputs/suspicious_invoices.csv`
+- `outputs/failed_files.csv`
+- `outputs/aggregate_summary.csv`
+- `outputs/invoice_automation_final_outputs.zip` when exported by the notebook
 
 ## Mini Q&A Agent
 
@@ -91,7 +91,7 @@ The web upload panel is demo-only and does not send files to a backend.
 
 ## Deployment
 
-The Vite config uses `base: "./"` so the frontend can be published on GitHub Pages or any static host without path fixes.
+The Vite config uses `base: "./"` so the frontend can be published on GitHub Pages without path fixes.
 
 ```bash
 npm run build
@@ -114,4 +114,5 @@ npm run build
 - Publish the demo video and writeup.
 - Add richer charts for category, vendor, and risk distributions.
 - Add a downloadable outputs panel wired to the exported ZIP bundle.
+
 

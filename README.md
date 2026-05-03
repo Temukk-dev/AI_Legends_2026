@@ -16,7 +16,8 @@ This repository is built for the **AI Legends 2026 — AI Agents Automation** tr
 | GitHub Repository | https://github.com/Temukk-dev/AI_Legends_2026 |
 | Demo Video | TODO |
 | Kaggle Writeup | https://www.kaggle.com/competitions/ai-legends-2026-ai-agents-automation/writeups/invoice-automation-ai-agent-ctr-audit |
-| Demo Website | [Website/](website/) |
+| Demo Website | https://temukk-dev.github.io/AI_Legends_2026/ |
+| Outputs Folder | [outputs/](outputs/) |
 
 ---
 
@@ -166,6 +167,8 @@ AI_Legends_2026/
 | `app.py` | Demo UI entry point |
 | `requirements.txt` | Python dependency list |
 | `docs/` | Extra documentation and submission materials |
+| `outputs/` | Exported CSV files from the final verified notebook run |
+| `website/` | Static React + Vite frontend presentation demo for GitHub Pages |
 
 ---
 
@@ -735,18 +738,21 @@ The notebook exports final outputs to:
 
 | File | Purpose |
 |---|---|
-| `all_results.csv` | Main source-of-truth table containing all processed invoices |
-| `clean_invoices.csv` | Only clean invoices with `AUTO_POST` |
-| `suspicious_invoices.csv` | Invoices that require review or denial |
-| `failed_files.csv` | Files that failed extraction but are still tracked |
-| `aggregate_summary.csv` | One-row summary for evaluation and reporting |
-| `invoice_automation_final_outputs.zip` | Downloadable package containing final CSV outputs |
+| `outputs/all_results.csv` | Main source-of-truth table containing all processed invoices |
+| `outputs/final_results.csv` | Final verified batch output used by the web demo and Mini Q&A examples |
+| `outputs/clean_invoices.csv` | Only clean invoices with `AUTO_POST` |
+| `outputs/suspicious_invoices.csv` | Invoices that require review or denial |
+| `outputs/failed_files.csv` | Files that failed extraction but are still tracked |
+| `outputs/aggregate_summary.csv` | One-row summary for evaluation and reporting |
+| `outputs/invoice_automation_final_outputs.zip` | Downloadable package containing final CSV outputs |
 
 ---
 
 ## Output Table Details
 
-### `all_results.csv`
+### `outputs/all_results.csv`
+
+`outputs/final_results.csv` is included in the repository as the same verified final batch table used by the web demo.
 
 This is the main final result table.
 
@@ -793,7 +799,7 @@ Important columns include:
 
 ---
 
-### `clean_invoices.csv`
+### `outputs/clean_invoices.csv`
 
 Contains only invoices that satisfy:
 
@@ -807,7 +813,7 @@ Use this file to review invoices that the system considers safe for automatic pr
 
 ---
 
-### `suspicious_invoices.csv`
+### `outputs/suspicious_invoices.csv`
 
 Contains invoices that satisfy at least one of these conditions:
 
@@ -821,7 +827,7 @@ Use this file for manual review and error analysis.
 
 ---
 
-### `failed_files.csv`
+### `outputs/failed_files.csv`
 
 Contains invoices where extraction failed or the system could not confidently extract the required fields.
 
@@ -835,7 +841,7 @@ This is important for a safe finance automation system.
 
 ---
 
-### `aggregate_summary.csv`
+### `outputs/aggregate_summary.csv`
 
 Contains one row with aggregate counts.
 
@@ -901,11 +907,12 @@ The uploaded notebook produced the following final verification result.
 
 | File | Shape |
 |---|---:|
-| `all_results.csv` | 100 rows × 58 columns |
-| `clean_invoices.csv` | 68 rows × 58 columns |
-| `suspicious_invoices.csv` | 32 rows × 58 columns |
-| `failed_files.csv` | 6 rows × 58 columns |
-| `aggregate_summary.csv` | 1 row × 16 columns |
+| `outputs/all_results.csv` | 100 rows × 58 columns |
+| `outputs/final_results.csv` | 100 rows × 58 columns |
+| `outputs/clean_invoices.csv` | 68 rows × 58 columns |
+| `outputs/suspicious_invoices.csv` | 32 rows × 58 columns |
+| `outputs/failed_files.csv` | 6 rows × 58 columns |
+| `outputs/aggregate_summary.csv` | 1 row × 16 columns |
 
 ### Final Verification Status
 
@@ -1369,7 +1376,7 @@ Before final submission, verify:
 | Invoice-level fact-check Q&A works | Done in notebook |
 | Kaggle writeup submitted | Pending |
 | Demo video uploaded | Pending |
-| Demo website or public project link available | GitHub available; website optional |
+| Demo website or public project link available | GitHub Pages website configured |
 | No API keys committed | Required |
 | No private raw data committed | Required |
 
@@ -1390,10 +1397,10 @@ Use this project flow in a short demo video:
 5. Explain decisions:
    - "Each invoice becomes AUTO_POST, HUMAN_APPROVAL, or DENY."
 6. Show outputs:
-   - `all_results.csv`
-   - `clean_invoices.csv`
-   - `suspicious_invoices.csv`
-   - `aggregate_summary.csv`
+   - `outputs/all_results.csv`
+   - `outputs/clean_invoices.csv`
+   - `outputs/suspicious_invoices.csv`
+   - `outputs/aggregate_summary.csv`
 7. Show Q&A:
    - "How many invoices are suspicious?"
    - "What is invoice_001.pdf final decision?"
@@ -1419,7 +1426,7 @@ GitHub repository: Public
 README: Updated
 Demo video: Pending
 Kaggle writeup: Pending
-Demo website: Optional / Pending
+Demo website: GitHub Pages
 ```
 
 ---
@@ -1454,3 +1461,6 @@ This project is designed to be easy to inspect:
 - Q&A answers come directly from processed structured results.
 - The final decision logic is deterministic and explainable.
 - The pipeline supports both image and PDF invoice formats.
+
+
+

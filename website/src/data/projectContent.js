@@ -79,7 +79,7 @@ const commonLinks = [
   {
     label: "View Outputs folder",
     detail: "all_results.csv, summary, and exported batch files",
-    href: "#outputs",
+    href: "https://github.com/Temukk-dev/AI_Legends_2026/tree/main/outputs",
     icon: icons.table,
   },
   {
@@ -1026,3 +1026,4 @@ export const content = {
     },
   },
 };
+
