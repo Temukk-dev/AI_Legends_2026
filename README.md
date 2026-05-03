@@ -15,8 +15,8 @@ This repository is built for the **AI Legends 2026 — AI Agents Automation** tr
 | Kaggle Notebook | https://www.kaggle.com/code/temuulenmunkhochir/ai-legends-2026-final-ipynb |
 | GitHub Repository | https://github.com/Temukk-dev/AI_Legends_2026 |
 | Demo Video | TODO |
-| Kaggle Writeup | TODO |
-| Demo Website | [website/](website/) |
+| Kaggle Writeup | https://www.kaggle.com/competitions/ai-legends-2026-ai-agents-automation/writeups/invoice-automation-ai-agent-ctr-audit |
+| Demo Website | [Website/](website/) |
 
 ---
 
