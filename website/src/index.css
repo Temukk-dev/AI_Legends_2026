@@ -1,0 +1,502 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  --paper: #fbf8f1;
+  --paper-soft: #fffdf8;
+  --ink: #111412;
+  --muted: #7d7a73;
+  --line: rgba(45, 43, 37, 0.1);
+  --green: #14753c;
+  --green-soft: #eaf4eb;
+  --gold: #d8a62b;
+  --shadow: 0 24px 80px rgba(64, 54, 36, 0.11);
+  --shadow-soft: 0 14px 44px rgba(64, 54, 36, 0.08);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  background: var(--paper);
+  font-family:
+    Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button {
+  font: inherit;
+}
+
+.page-ambient {
+  pointer-events: none;
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  background:
+    radial-gradient(circle at 78% 12%, rgba(20, 117, 60, 0.09), transparent 30%),
+    radial-gradient(circle at 16% 22%, rgba(216, 166, 43, 0.08), transparent 28%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.88), rgba(251, 248, 241, 0.82));
+}
+
+main,
+footer,
+.topbar {
+  position: relative;
+  z-index: 1;
+}
+
+main {
+  padding-top: 86px;
+}
+
+@layer components {
+  .section-pad {
+    @apply py-20 sm:py-24 lg:py-32;
+  }
+
+  .section-tint {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.44), rgba(244, 238, 226, 0.34));
+  }
+
+  .eyebrow {
+    @apply text-xs font-semibold uppercase tracking-[0.18em] text-emerald-700;
+  }
+
+  .section-title {
+    @apply mt-4 text-4xl font-semibold tracking-[-0.045em] text-stone-950 sm:text-5xl lg:text-6xl;
+    line-height: 0.98;
+  }
+
+  .section-description {
+    @apply mt-5 max-w-2xl text-base leading-8 text-stone-500 sm:text-lg;
+  }
+
+  .topbar {
+    @apply fixed left-0 right-0 top-0 z-40 backdrop-blur-2xl;
+    background: rgba(251, 248, 241, 0.58);
+  }
+
+  .hamburger-button {
+    @apply grid h-12 w-12 place-items-center rounded-full text-stone-950 transition hover:bg-white/70 focus:outline-none focus:ring-2 focus:ring-emerald-700/30;
+  }
+
+  .topnav-link {
+    @apply relative text-[15px] font-medium text-stone-500 transition hover:text-stone-950;
+  }
+
+  .topnav-link::after {
+    content: "";
+    @apply absolute -bottom-3 left-1/2 h-0.5 w-0 -translate-x-1/2 rounded-full bg-emerald-700 transition-all duration-300;
+  }
+
+  .topnav-link:hover::after {
+    @apply w-8;
+  }
+
+  .signin-button {
+    @apply rounded-full bg-white px-6 py-3 text-sm font-medium text-stone-600 shadow-[0_12px_36px_rgba(64,54,36,0.10)] transition hover:-translate-y-0.5 hover:text-stone-950 hover:shadow-[0_18px_48px_rgba(64,54,36,0.16)] focus:outline-none focus:ring-2 focus:ring-emerald-700/30;
+  }
+
+  .language-switch {
+    @apply flex items-center gap-1 rounded-full px-2 py-1 text-sm font-semibold text-stone-600;
+  }
+
+  .language-pill,
+  .language-pill-active {
+    @apply rounded-full px-2.5 py-2 transition focus:outline-none focus:ring-2 focus:ring-emerald-700/25;
+  }
+
+  .language-pill {
+    @apply text-stone-500 hover:bg-white/70 hover:text-stone-950;
+  }
+
+  .language-pill-active {
+    @apply bg-white text-stone-950 shadow-[0_10px_28px_rgba(64,54,36,0.10)];
+  }
+
+  .hero-section {
+    @apply min-h-screen;
+  }
+
+  .hero-greeting {
+    @apply text-xl font-medium text-stone-400 sm:text-2xl;
+  }
+
+  .hero-greeting span {
+    @apply font-semibold text-emerald-700;
+  }
+
+  .hero-title {
+    @apply mt-8 text-6xl font-semibold tracking-[-0.07em] text-stone-950 sm:text-7xl lg:text-[82px] xl:text-[96px];
+    line-height: 0.94;
+  }
+
+  .hero-subtitle {
+    @apply mt-7 max-w-2xl text-xl leading-9 text-stone-500 sm:text-2xl;
+  }
+
+  .search-cta {
+    @apply flex w-full max-w-[690px] items-center gap-4 rounded-full border border-white/80 bg-white/80 px-5 py-5 text-left shadow-[0_24px_70px_rgba(64,54,36,0.13)] backdrop-blur-xl transition hover:-translate-y-0.5 hover:bg-white focus:outline-none focus:ring-2 focus:ring-emerald-700/25;
+  }
+
+  .search-plus,
+  .search-spark,
+  .search-mic {
+    @apply grid h-10 w-10 shrink-0 place-items-center rounded-full text-stone-400;
+  }
+
+  .search-spark {
+    @apply text-emerald-700;
+  }
+
+  .search-placeholder {
+    @apply min-w-0 flex-1 truncate text-lg font-medium text-stone-400;
+  }
+
+  .search-divider {
+    @apply hidden h-8 w-px bg-stone-200 sm:block;
+  }
+
+  .quick-pill {
+    @apply rounded-full border border-stone-200 px-4 py-2 text-sm font-medium text-stone-500 shadow-sm;
+    background: rgba(255, 255, 255, 0.62);
+  }
+
+  .temple-stage {
+    @apply relative mx-auto grid min-h-[360px] w-full max-w-[820px] place-items-center sm:min-h-[520px] lg:min-h-[720px];
+  }
+
+  .temple-glow {
+    @apply absolute inset-x-8 bottom-12 h-32 rounded-full bg-emerald-900/10 blur-3xl;
+  }
+
+  .temple-image {
+    @apply relative z-10 h-auto w-full max-w-[760px] object-contain drop-shadow-[0_34px_40px_rgba(65,54,31,0.18)];
+  }
+
+  .premium-card,
+  .pain-card,
+  .rounded-panel,
+  .demo-shell,
+  .result-table,
+  .qa-card,
+  .notice-panel {
+    border: 1px solid var(--line);
+    background: rgba(255, 255, 255, 0.72);
+    box-shadow: var(--shadow-soft);
+    backdrop-filter: blur(18px);
+  }
+
+  .premium-card {
+    @apply rounded-[28px] p-7;
+  }
+
+  .hero-link-card {
+    @apply flex items-center gap-6;
+  }
+
+  .hero-link-card h3,
+  .link-card h3 {
+    @apply text-xl font-semibold tracking-tight text-stone-950;
+  }
+
+  .hero-link-card p,
+  .link-card p {
+    @apply mt-1 text-sm leading-6 text-stone-500;
+  }
+
+  .icon-disc {
+    @apply grid h-[68px] w-[68px] shrink-0 place-items-center rounded-full bg-emerald-50 text-emerald-700;
+  }
+
+  .icon-soft {
+    @apply grid h-11 w-11 place-items-center rounded-2xl bg-emerald-50 text-emerald-700;
+  }
+
+  .arrow-link {
+    @apply ml-auto grid h-10 w-10 shrink-0 place-items-center rounded-full text-emerald-700 transition hover:bg-emerald-50 hover:translate-x-0.5;
+  }
+
+  .pain-card {
+    @apply rounded-[28px] p-7;
+  }
+
+  .pain-card h3 {
+    @apply mt-6 text-xl font-semibold tracking-tight text-stone-950;
+  }
+
+  .pain-card p {
+    @apply mt-3 text-sm leading-7 text-stone-500;
+  }
+
+  .workflow-strip {
+    @apply grid gap-4 lg:grid-cols-6;
+  }
+
+  .workflow-item {
+    @apply relative;
+  }
+
+  .workflow-card {
+    @apply h-full rounded-[28px] border border-stone-200/80 p-5 shadow-[0_12px_38px_rgba(64,54,36,0.07)];
+    background: rgba(255, 255, 255, 0.68);
+  }
+
+  .workflow-card h3 {
+    @apply mt-6 text-base font-semibold leading-tight tracking-tight text-stone-950;
+  }
+
+  .workflow-card p {
+    @apply mt-3 text-sm leading-6 text-stone-500;
+  }
+
+  .step-number {
+    @apply float-right text-xs font-semibold text-stone-300;
+  }
+
+  .workflow-arrow {
+    @apply absolute -right-3 top-1/2 hidden -translate-y-1/2 text-emerald-700 lg:block;
+  }
+
+  .rounded-panel {
+    @apply rounded-[34px];
+  }
+
+  .risk-row {
+    @apply flex gap-4 rounded-[24px] bg-white/70 p-5;
+  }
+
+  .risk-row h3,
+  .qa-card h3 {
+    @apply text-base font-semibold tracking-tight text-stone-950;
+  }
+
+  .risk-row p,
+  .qa-card p {
+    @apply mt-2 text-sm leading-7 text-stone-500;
+  }
+
+  .decision-card h3 {
+    @apply mt-8 text-2xl font-semibold tracking-tight text-stone-950;
+  }
+
+  .decision-card p {
+    @apply mt-4 text-sm leading-7 text-stone-500;
+  }
+
+  .decision-badge {
+    @apply inline-flex items-center gap-2 rounded-full px-3 py-1.5 text-xs font-bold tracking-[0.04em];
+  }
+
+  .decision-success {
+    @apply bg-emerald-50 text-emerald-700;
+  }
+
+  .decision-warning {
+    @apply bg-amber-50 text-amber-700;
+  }
+
+  .decision-danger {
+    @apply bg-rose-50 text-rose-700;
+  }
+
+  .result-tile {
+    @apply rounded-[26px] border border-stone-200/80 bg-white/70 p-6 shadow-[0_12px_38px_rgba(64,54,36,0.07)];
+  }
+
+  .result-chip {
+    @apply inline-flex rounded-full px-3 py-1 text-xs font-bold tracking-[0.04em];
+  }
+
+  .result-tile strong {
+    @apply mt-5 block text-5xl font-semibold tracking-[-0.04em] text-stone-950;
+  }
+
+  .result-tile span:last-child {
+    @apply mt-1 block text-sm text-stone-400;
+  }
+
+  .demo-shell {
+    @apply grid gap-5 rounded-[34px] p-4 lg:grid-cols-[0.9fr_1.1fr];
+  }
+
+  .upload-zone {
+    @apply rounded-[28px] border border-dashed border-stone-300 p-8 text-center transition;
+    background: rgba(251, 248, 241, 0.7);
+  }
+
+  .upload-zone-active {
+    @apply border-emerald-700 bg-emerald-50;
+  }
+
+  .upload-icon {
+    @apply mx-auto grid h-16 w-16 place-items-center rounded-full bg-emerald-50 text-emerald-700;
+  }
+
+  .upload-zone h3 {
+    @apply mt-7 text-3xl font-semibold tracking-tight text-stone-950;
+  }
+
+  .upload-zone p {
+    @apply mx-auto mt-4 max-w-md text-sm leading-7 text-stone-500;
+  }
+
+  .primary-soft-button,
+  .secondary-soft-button {
+    @apply inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 text-sm font-semibold transition focus:outline-none focus:ring-2 focus:ring-emerald-700/25;
+  }
+
+  .primary-soft-button {
+    @apply bg-emerald-700 text-white shadow-[0_16px_38px_rgba(20,117,60,0.22)] hover:-translate-y-0.5 hover:bg-emerald-800;
+  }
+
+  .secondary-soft-button {
+    @apply bg-white text-stone-700 shadow-sm hover:-translate-y-0.5 hover:text-stone-950;
+  }
+
+  .file-panel {
+    @apply rounded-[28px] p-7;
+    background: rgba(255, 255, 255, 0.72);
+  }
+
+  .soft-label,
+  .csv-pill {
+    @apply rounded-full bg-stone-100 px-3 py-1.5 text-xs font-semibold text-stone-500;
+  }
+
+  .empty-state {
+    @apply rounded-[22px] border border-dashed border-stone-200 p-6 text-sm leading-7 text-stone-500;
+    background: rgba(251, 248, 241, 0.7);
+  }
+
+  .file-row {
+    @apply flex items-center gap-3 rounded-[22px] border border-stone-200 p-3;
+    background: rgba(251, 248, 241, 0.65);
+  }
+
+  .status-ready,
+  .status-working {
+    @apply inline-flex shrink-0 items-center gap-2 rounded-full px-3 py-1.5 text-xs font-semibold;
+  }
+
+  .status-ready {
+    @apply bg-emerald-50 text-emerald-700;
+  }
+
+  .status-working {
+    @apply bg-amber-50 text-amber-700;
+  }
+
+  .result-table {
+    @apply overflow-hidden rounded-[34px];
+  }
+
+  .result-table th {
+    @apply px-6 py-4 text-xs font-semibold uppercase tracking-[0.12em] text-stone-400;
+    background: #f4efe4;
+  }
+
+  .result-table td {
+    @apply border-t border-stone-200/80 px-6 py-5 text-stone-500;
+  }
+
+  .qa-card {
+    @apply flex gap-5 rounded-[28px] p-6;
+  }
+
+  .submission-item {
+    @apply flex items-center gap-4 rounded-[26px] border border-stone-200/80 bg-white/70 p-5 text-sm font-semibold text-stone-700 shadow-[0_12px_38px_rgba(64,54,36,0.06)];
+  }
+
+  .notice-panel {
+    @apply flex flex-col gap-5 rounded-[30px] p-6 text-sm leading-7 text-stone-600 sm:flex-row sm:items-center sm:justify-between;
+  }
+
+  .link-card span:last-child {
+    @apply mt-5 inline-flex text-xs font-semibold uppercase tracking-[0.12em] text-emerald-700;
+  }
+
+  .drawer-backdrop {
+    @apply fixed inset-0 z-50 backdrop-blur-sm;
+    background: rgba(12, 10, 9, 0.18);
+  }
+
+  .side-drawer {
+    @apply fixed left-4 top-4 z-[60] h-[calc(100vh-2rem)] w-[min(390px,calc(100vw-2rem))] overflow-y-auto rounded-[34px] border border-stone-200 p-7 shadow-[0_30px_100px_rgba(30,24,14,0.22)] backdrop-blur-2xl;
+    background: rgba(255, 253, 248, 0.95);
+  }
+
+  .icon-button {
+    @apply grid h-10 w-10 place-items-center rounded-full bg-stone-100 text-stone-700 transition hover:bg-stone-200 focus:outline-none focus:ring-2 focus:ring-emerald-700/25;
+  }
+
+  .drawer-title {
+    @apply text-xs font-bold uppercase tracking-[0.16em] text-stone-400;
+  }
+
+  .drawer-link {
+    @apply flex items-center justify-between gap-4 rounded-2xl px-4 py-3 text-sm font-medium text-stone-700 transition hover:bg-emerald-50 hover:text-emerald-800;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero-section {
+    min-height: auto;
+  }
+
+  main {
+    padding-top: 76px;
+  }
+
+  .hero-greeting {
+    @apply text-xl;
+  }
+
+  .temple-stage {
+    min-height: 310px;
+  }
+
+  .temple-image {
+    max-width: 390px;
+  }
+
+  .hero-title {
+    font-size: clamp(3.2rem, 13vw, 4.9rem);
+    letter-spacing: -0.07em;
+  }
+
+  .hero-subtitle {
+    @apply text-xl leading-8;
+  }
+
+  .search-cta {
+    @apply px-4 py-4;
+  }
+
+  .search-placeholder {
+    @apply text-base;
+  }
+
+  .signin-button {
+    @apply px-4 py-2.5 text-xs;
+  }
+
+  .language-switch {
+    @apply bg-white/60 shadow-sm;
+  }
+}

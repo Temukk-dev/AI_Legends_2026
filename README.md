@@ -14,9 +14,9 @@ This repository is built for the **AI Legends 2026 — AI Agents Automation** tr
 |---|---|
 | Kaggle Notebook | https://www.kaggle.com/code/temuulenmunkhochir/ai-legends-2026-final-ipynb |
 | GitHub Repository | https://github.com/Temukk-dev/AI_Legends_2026 |
-| Demo Video | - |
-| Kaggle Writeup | - |
-| Demo Website | - |
+| Demo Video | TODO |
+| Kaggle Writeup | TODO |
+| Demo Website | [website/](website/) |
 
 ---
 
