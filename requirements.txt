@@ -1,0 +1,7 @@
+pandas>=2.2
+numpy>=1.26
+pillow>=10.0
+rapidfuzz>=3.9
+pymupdf>=1.24
+groq>=0.9
+gradio>=4.44
