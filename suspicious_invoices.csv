@@ -1,0 +1,601 @@
+﻿file_name,file_path,file_type,invoice_number,vendor_name,invoice_date,due_date,bank_name,bank_account,email,currency,subtotal,tax,total_amount,items,items_text,calculated_total_from_items,raw_model_response,fallback_mode,category,is_registered_vendor,matched_vendor_name,vendor_match_score,amount_check,date_check,bank_account_check,duplicate_check,risk_flags,final_decision,explanation,processing_status,processing_time_sec,extraction_status,processed_at,error_types,needs_human_approval,loaded_from_cache,error_message,failure_reason,account_number,quantity,unit_price,grand_total,calculated_total,denial_reason,vendor_registered,bank_account_match,math_correct,date_valid,is_duplicate,has_amount_mismatch,has_unregistered_vendor,has_invalid_date,has_bank_account_mismatch,has_duplicate,has_extraction_failed,is_suspicious,is_clean
+invoice_001.pdf,/kaggle/input/competitions/ai-legends-2026-ai-agents-automation/eval_agent/eval_agent/invoice_001.pdf,pdf,001,Демо Компани-5,2026-03-02,2026-03-17,Демо Банк 2,1009900880,info@demo5.mn,MNT,2920000.0,,3000000.0,"[{'description': 'Ачаа тээвэр (олон улс)', 'quantity': 1.0, 'unit_price': 2500000.0, 'line_total': 2500000.0, 'calculated_line_total': 2500000.0}, {'description': 'Гаалийн зардал', 'quantity': 1.0, 'unit_price': 420000.0, 'line_total': 420000.0, 'calculated_line_total': 420000.0}]",Ачаа тээвэр (олон улс) | Гаалийн зардал,2920000.0,"{
+  ""invoice_number"": ""001"",
+  ""vendor_name"": ""Демо Компани-5"",
+  ""invoice_date"": ""2026-03-02"",
+  ""due_date"": ""2026-03-17"",
+  ""bank_name"": ""Демо Банк 2"",
+  ""bank_account"": ""1009900880"",
+  ""email"": ""info@demo5.mn"",
+  ""currency"": ""MNT"",
+  ""subtotal"": 2920000,
+  ""tax"": null,
+  ""total_amount"": 3000000,
+  ""items"": [
+    {
+      ""description"": ""Ачаа тээвэр (олон улс)"",
+      ""quantity"": 1,
+      ""unit_price"": 2500000,
+      ""line_total"": 2500000
+    },
+    {
+      ""description"": ""Гаалийн зардал"",
+      ""quantity"": 1,
+      ""unit_price"": 420000,
+      ""line_total"": 420000
+    }
+  ]
+}",False,7,True,Демо Компани-5,100.0,False,True,True,False,AMOUNT_MISMATCH,HUMAN_APPROVAL,Detected risk flags: AMOUNT_MISMATCH,SUCCESS,1.42,SUCCESS,2026-05-03T19:20:55.110492,AMOUNT_MISMATCH,True,True,,,,,,,,,False,False,False,False,False,True,False,False,False,False,False,True,False
+invoice_008.pdf,/kaggle/input/competitions/ai-legends-2026-ai-agents-automation/eval_agent/eval_agent/invoice_008.pdf,pdf,008,Демо Компани-1,2026-03-27,2026-04-11,Демо Банк 1,5001122138,finance@demo1.mn,MNT,65000.0,,65000.0,"[{'description': 'Ачаа боодлын материал', 'quantity': 1.0, 'unit_price': 65000.0, 'line_total': 65000.0, 'calculated_line_total': 65000.0}]",Ачаа боодлын материал,65000.0,"{
+  ""invoice_number"": ""008"",
+  ""vendor_name"": ""Демо Компани-1"",
+  ""invoice_date"": ""2026-03-27"",
+  ""due_date"": ""2026-04-11"",
+  ""bank_name"": ""Демо Банк 1"",
+  ""bank_account"": ""5001122138"",
+  ""email"": ""finance@demo1.mn"",
+  ""currency"": ""MNT"",
+  ""subtotal"": 65000,
+  ""tax"": null,
+  ""total_amount"": 65000,
+  ""items"": [
+    {
+      ""description"": ""Ачаа боодлын материал"",
+      ""quantity"": 1,
+      ""unit_price"": 65000,
+      ""line_total"": 65000
+    }
+  ]
+}",False,8,True,Демо Компани-1,100.0,True,True,False,False,BANK_ACCOUNT_MISMATCH,DENY,Detected risk flags: BANK_ACCOUNT_MISMATCH,SUCCESS,10.26,SUCCESS,2026-05-03T19:21:24.578277,BANK_ACCOUNT_MISMATCH,False,True,,,,,,,,Denied because of detected risk: BANK_ACCOUNT_MISMATCH,False,False,False,False,False,False,False,False,True,False,False,True,False
+invoice_010.png,/kaggle/input/competitions/ai-legends-2026-ai-agents-automation/eval_agent/eval_agent/invoice_010.png,png,010,Демо Компани-1,2026-04-11,2026-04-26,Демо Банк 1,5001122360,finance@demo1.mn,MNT,380000.0,,380000.0,"[{'description': 'Хургэлтийн үйлчилгээ', 'quantity': 4.0, 'unit_price': 95000.0, 'line_total': 380000.0, 'calculated_line_total': 380000.0}]",Хургэлтийн үйлчилгээ,380000.0,"{
+  ""invoice_number"": ""010"",
+  ""vendor_name"": ""Демо Компани-1"",
+  ""invoice_date"": ""2026-04-11"",
+  ""due_date"": ""2026-04-26"",
+  ""bank_name"": ""Демо Банк 1"",
+  ""bank_account"": ""5001122360"",
+  ""email"": ""finance@demo1.mn"",
+  ""currency"": ""MNT"",
+  ""subtotal"": 380000.0,
+  ""tax"": null,
+  ""total_amount"": 380000.0,
+  ""items"": [
+    {
+      ""description"": ""Хургэлтийн үйлчилгээ"",
+      ""quantity"": 4,
+      ""unit_price"": 95000.0,
+      ""line_total"": 380000.0
+    }
+  ]
+}",False,8,True,Демо Компани-1,100.0,True,True,False,False,BANK_ACCOUNT_MISMATCH,DENY,Detected risk flags: BANK_ACCOUNT_MISMATCH,SUCCESS,10.65,SUCCESS,2026-05-03T19:21:42.887476,BANK_ACCOUNT_MISMATCH,False,True,,,,,,,,Denied because of detected risk: BANK_ACCOUNT_MISMATCH,False,False,False,False,False,False,False,False,True,False,False,True,False
+invoice_012.pdf,/kaggle/input/competitions/ai-legends-2026-ai-agents-automation/eval_agent/eval_agent/invoice_012.pdf,pdf,012,Демо Компани-3,2026-04-06,2026-04-01,Демо Банк 1,4001122334,accounts@demo3.mn,MNT,400000.0,,400000.0,"[{'description': 'Сургалт (IT)', 'quantity': 1.0, 'unit_price': 400000.0, 'line_total': 400000.0, 'calculated_line_total': 400000.0}]",Сургалт (IT),400000.0,"{
+  ""invoice_number"": ""012"",
+  ""vendor_name"": ""Демо Компани-3"",
+  ""invoice_date"": ""2026-04-06"",
+  ""due_date"": ""2026-04-01"",
+  ""bank_name"": ""Демо Банк 1"",
+  ""bank_account"": ""4001122334"",
+  ""email"": ""accounts@demo3.mn"",
+  ""currency"": ""MNT"",
+  ""subtotal"": 400000,
+  ""tax"": null,
+  ""total_amount"": 400000,
+  ""items"": [
+    {
+      ""description"": ""Сургалт (IT)"",
+      ""quantity"": 1,
+      ""unit_price"": 400000,
+      ""line_total"": 400000
+    }
+  ]
+}",False,3,True,Демо Компани-3,100.0,True,False,True,False,INVALID_DATE,HUMAN_APPROVAL,Detected risk flags: INVALID_DATE,SUCCESS,1.66,SUCCESS,2026-05-03T19:24:56.798880,INVALID_DATE,True,False,,,,,,,,,False,False,False,False,False,False,False,True,False,False,False,True,False
+invoice_014.pdf,/kaggle/input/competitions/ai-legends-2026-ai-agents-automation/eval_agent/eval_agent/invoice_014.pdf,pdf,НЭХЭМЖЛЭХ № 014,Демо Компани-15,2026-04-06,2026-04-21,Демо Банк 1,5555566677,ops@demo15.mn,MNT,600000.0,,600000.0,"[{'description': 'Барилга засвар материал', 'quantity': 4.0, 'unit_price': 150000.0, 'line_total': 600000.0, 'calculated_line_total': 600000.0}]",Барилга засвар материал,600000.0,"{
+  ""invoice_number"": ""НЭХЭМЖЛЭХ № 014"",
+  ""vendor_name"": ""Демо Компани-15"",
+  ""invoice_date"": ""2026-04-06"",
+  ""due_date"": ""2026-04-21"",
+  ""bank_name"": ""Демо Банк 1"",
+  ""bank_account"": ""5555566677"",
+  ""email"": ""ops@demo15.mn"",
+  ""currency"": ""MNT"",
+  ""subtotal"": 600000,
+  ""tax"": null,
+  ""total_amount"": 600000,
+  ""items"": [
+    {
+      ""description"": ""Барилга засвар материал"",
+      ""quantity"": 4,
+      ""unit_price"": 150000,
+      ""line_total"": 600000
+    }
+  ]
+}",False,4,True,Демо Компани-1,96.55172413793103,True,True,False,False,BANK_ACCOUNT_MISMATCH,DENY,Detected risk flags: BANK_ACCOUNT_MISMATCH,SUCCESS,1.13,SUCCESS,2026-05-03T19:24:59.304282,BANK_ACCOUNT_MISMATCH,False,False,,,,,,,,Denied because of detected risk: BANK_ACCOUNT_MISMATCH,False,False,False,False,False,False,False,False,True,False,False,True,False
+invoice_015.pdf,/kaggle/input/competitions/ai-legends-2026-ai-agents-automation/eval_agent/eval_agent/invoice_015.pdf,pdf,015,Демо Компани-6,2026-03-22,2026-03-11,Демо Банк 2,1166778899,billing@demo6.mn,MNT,110000.0,,110000.0,"[{'description': 'Агуулахын камер систем (сарын)', 'quantity': 1.0, 'unit_price': 110000.0, 'line_total': 110000.0, 'calculated_line_total': 110000.0}]",Агуулахын камер систем (сарын),110000.0,"{
+  ""invoice_number"": ""015"",
+  ""vendor_name"": ""Демо Компани-6"",
+  ""invoice_date"": ""2026-03-22"",
+  ""due_date"": ""2026-03-11"",
+  ""bank_name"": ""Демо Банк 2"",
+  ""bank_account"": ""1166778899"",
+  ""email"": ""billing@demo6.mn"",
+  ""currency"": ""MNT"",
+  ""subtotal"": 110000,
+  ""tax"": null,
+  ""total_amount"": 110000,
+  ""items"": [
+    {
+      ""description"": ""Агуулахын камер систем (сарын)"",
+      ""quantity"": 1,
+      ""unit_price"": 110000,
+      ""line_total"": 110000
+    }
+  ]
+}",False,7,True,Демо Компани-6,100.0,True,False,True,False,INVALID_DATE,HUMAN_APPROVAL,Detected risk flags: INVALID_DATE,SUCCESS,1.29,SUCCESS,2026-05-03T19:25:00.591425,INVALID_DATE,True,False,,,,,,,,,False,False,False,False,False,False,False,True,False,False,False,True,False
+invoice_016.pdf,/kaggle/input/competitions/ai-legends-2026-ai-agents-automation/eval_agent/eval_agent/invoice_016.pdf,pdf,016,Демо Компани-3,2026-03-10,2026-03-25,Демо Банк 1,4001122334,accounts@demo3.mn,MNT,150000.0,,150000.0,"[{'description': 'Техник үйлчилгээ', 'quantity': 2.0, 'unit_price': 75000.0, 'line_total': 150000.0, 'calculated_line_total': 150000.0}]",Техник үйлчилгээ,150000.0,"{
+  ""invoice_number"": ""016"",
+  ""vendor_name"": ""Демо Компани-3"",
+  ""invoice_date"": ""2026-03-10"",
+  ""due_date"": ""2026-03-25"",
+  ""bank_name"": ""Демо Банк 1"",
+  ""bank_account"": ""4001122334"",
+  ""email"": ""accounts@demo3.mn"",
+  ""currency"": ""MNT"",
+  ""subtotal"": 150000,
+  ""tax"": null,
+  ""total_amount"": 150000,
+  ""items"": [
+    {
+      ""description"": ""Техник үйлчилгээ"",
+      ""quantity"": 2,
+      ""unit_price"": 75000,
+      ""line_total"": 150000
+    }
+  ]
+}",False,3,True,Демо Компани-3,100.0,True,True,True,True,DUPLICATE,DENY,Detected risk flags: DUPLICATE,SUCCESS,1.15,SUCCESS,2026-05-03T19:25:01.743055,DUPLICATE,False,False,,,,,,,,Denied because of detected risk: DUPLICATE,False,False,False,False,True,False,False,False,False,True,False,True,False
+invoice_019.png,/kaggle/input/competitions/ai-legends-2026-ai-agents-automation/eval_agent/eval_agent/invoice_019.png,png,019,Демо Компани-4,2025-10-26,2025-11-10,Демо Банк 2,5007788990,invoicing@demo4.mn,MNT,190000.0,,190000.0,"[{'description': 'Вэб байршуулалт (сарын)', 'quantity': 1.0, 'unit_price': 120000.0, 'line_total': 120000.0, 'calculated_line_total': 120000.0}, {'description': 'Домэйн сунгalt (жилийн)', 'quantity': 1.0, 'unit_price': 25000.0, 'line_total': 25000.0, 'calculated_line_total': 25000.0}, {'description': 'SSL сертификат (жилийн)', 'quantity': 1.0, 'unit_price': 45000.0, 'line_total': 45000.0, 'calculated_line_total': 45000.0}]",Вэб байршуулалт (сарын) | Домэйн сунгalt (жилийн) | SSL сертификат (жилийн),190000.0,"{
+  ""invoice_number"": ""019"",
+  ""vendor_name"": ""Демо Компани-4"",
+  ""invoice_date"": ""2025-10-26"",
+  ""due_date"": ""2025-11-10"",
+  ""bank_name"": ""Демо Банк 2"",
+  ""bank_account"": ""5007788990"",
+  ""email"": ""invoicing@demo4.mn"",
+  ""currency"": ""MNT"",
+  ""subtotal"": 190000,
+  ""tax"": null,
+  ""total_amount"": 190000,
+  ""items"": [
+    {
+      ""description"": ""Вэб байршуулалт (сарын)"",
+      ""quantity"": 1,
+      ""unit_price"": 120000,
+      ""line_total"": 120000
+    },
+    {
+      ""description"": ""Домэйн сунгalt (жилийн)"",
+      ""quantity"": 1,
+      ""unit_price"": 25000,
+      ""line_total"": 25000
+    },
+    {
+      ""description"": ""SSL сертификат (жилийн)"",
+      ""quantity"": 1,
+      ""unit_price"": 45000,
+      ""line_total"": 45000
+    }
+  ]
+}",False,10,True,Демо Компани-4,100.0,True,True,True,True,DUPLICATE,DENY,Detected risk flags: DUPLICATE,SUCCESS,7.59,SUCCESS,2026-05-03T19:25:20.258767,DUPLICATE,False,False,,,,,,,,Denied because of detected risk: DUPLICATE,False,False,False,False,True,False,False,False,False,True,False,True,False
+invoice_020.png,/kaggle/input/competitions/ai-legends-2026-ai-agents-automation/eval_agent/eval_agent/invoice_020.png,png,020,Демо Компани-5,2026-03-15,2026-03-30,Демо Банк 2,1009900880,info@demo5.mn,MNT,300000.0,,300000.0,"[{'description': 'Барилга засвар материал', 'quantity': 2.0, 'unit_price': 150000.0, 'line_total': 300000.0, 'calculated_line_total': 300000.0}]",Барилга засвар материал,300000.0,"{
+  ""invoice_number"": ""020"",
+  ""vendor_name"": ""Демо Компани-5"",
+  ""invoice_date"": ""2026-03-15"",
+  ""due_date"": ""2026-03-30"",
+  ""bank_name"": ""Демо Банк 2"",
+  ""bank_account"": ""1009900880"",
+  ""email"": ""info@demo5.mn"",
+  ""currency"": ""MNT"",
+  ""subtotal"": 300000,
+  ""tax"": null,
+  ""total_amount"": 300000,
+  ""items"": [
+    {
+      ""description"": ""Барилга засвар материал"",
+      ""quantity"": 2,
+      ""unit_price"": 150000,
+      ""line_total"": 300000
+    }
+  ]
+}",False,7,True,Демо Компани-5,100.0,True,True,True,True,DUPLICATE,DENY,Detected risk flags: DUPLICATE,SUCCESS,7.49,SUCCESS,2026-05-03T19:25:27.748925,DUPLICATE,False,False,,,,,,,,Denied because of detected risk: DUPLICATE,False,False,False,False,True,False,False,False,False,True,False,True,False
+invoice_025.png,/kaggle/input/competitions/ai-legends-2026-ai-agents-automation/eval_agent/eval_agent/invoice_025.png,png,025,Демо Компани-4,2026-03-09,2026-03-24,Демо Банк 2,5007788723,invoicing@demo4.mn,MNT,180000.0,,180000.0,"[{'description': 'Компьютер засвар үйлчилгээ', 'quantity': 4.0, 'unit_price': 45000.0, 'line_total': 180000.0, 'calculated_line_total': 180000.0}]",Компьютер засвар үйлчилгээ,180000.0,"{
+  ""invoice_number"": ""025"",
+  ""vendor_name"": ""Демо Компани-4"",
+  ""invoice_date"": ""2026-03-09"",
+  ""due_date"": ""2026-03-24"",
+  ""bank_name"": ""Демо Банк 2"",
+  ""bank_account"": ""5007788723"",
+  ""email"": ""invoicing@demo4.mn"",
+  ""currency"": ""MNT"",
+  ""subtotal"": 180000,
+  ""tax"": null,
+  ""total_amount"": 180000,
+  ""items"": [
+    {
+      ""description"": ""Компьютер засвар үйлчилгээ"",
+      ""quantity"": 4,
+      ""unit_price"": 45000,
+      ""line_total"": 180000
+    }
+  ]
+}",False,10,True,Демо Компани-4,100.0,True,True,False,False,BANK_ACCOUNT_MISMATCH,DENY,Detected risk flags: BANK_ACCOUNT_MISMATCH,SUCCESS,7.44,SUCCESS,2026-05-03T19:26:05.483561,BANK_ACCOUNT_MISMATCH,False,False,,,,,,,,Denied because of detected risk: BANK_ACCOUNT_MISMATCH,False,False,False,False,False,False,False,False,True,False,False,True,False
+invoice_029.pdf,/kaggle/input/competitions/ai-legends-2026-ai-agents-automation/eval_agent/eval_agent/invoice_029.pdf,pdf,029,Демо Компани-2,2025-09-06,2025-09-21,Демо Банк 1,1102003004,billing@demo2.mn,MNT,190000.0,,190000.0,"[{'description': 'Вэб байршуулалт (сарын)', 'quantity': 1.0, 'unit_price': 120000.0, 'line_total': 120000.0, 'calculated_line_total': 120000.0}, {'description': 'Домэйн сунгalt (жилийн)', 'quantity': 1.0, 'unit_price': 25000.0, 'line_total': 25000.0, 'calculated_line_total': 25000.0}, {'description': 'SSL сертификат (жилийн)', 'quantity': 1.0, 'unit_price': 45000.0, 'line_total': 45000.0, 'calculated_line_total': 45000.0}]",Вэб байршуулалт (сарын) | Домэйн сунгalt (жилийн) | SSL сертификат (жилийн),190000.0,"{
+  ""invoice_number"": ""029"",
+  ""vendor_name"": ""Демо Компани-2"",
+  ""invoice_date"": ""2025-09-06"",
+  ""due_date"": ""2025-09-21"",
+  ""bank_name"": ""Демо Банк 1"",
+  ""bank_account"": ""1102003004"",
+  ""email"": ""billing@demo2.mn"",
+  ""currency"": ""MNT"",
+  ""subtotal"": 190000,
+  ""tax"": null,
+  ""total_amount"": 190000,
+  ""items"": [
+    {
+      ""description"": ""Вэб байршуулалт (сарын)"",
+      ""quantity"": 1,
+      ""unit_price"": 120000,
+      ""line_total"": 120000
+    },
+    {
+      ""description"": ""Домэйн сунгalt (жилийн)"",
+      ""quantity"": 1,
+      ""unit_price"": 25000,
+      ""line_total"": 25000
+    },
+    {
+      ""description"": ""SSL сертификат (жилийн)"",
+      ""quantity"": 1,
+      ""unit_price"": 45000,
+      ""line_total"": 45000
+    }
+  ]
+}",False,10,True,Демо Компани-2,100.0,True,True,True,True,DUPLICATE,DENY,Detected risk flags: DUPLICATE,SUCCESS,9.64,SUCCESS,2026-05-03T19:26:39.999690,DUPLICATE,False,False,,,,,,,,Denied because of detected risk: DUPLICATE,False,False,False,False,True,False,False,False,False,True,False,True,False
+invoice_034.pdf,/kaggle/input/competitions/ai-legends-2026-ai-agents-automation/eval_agent/eval_agent/invoice_034.pdf,pdf,034,Демо Компани-8,2026-03-08,2026-03-23,Демо Банк 1,4005544559,billing@demo8.mn,MNT,550000.0,,550000.0,"[{'description': 'Харуул хамгаалалт (сарын)', 'quantity': 1.0, 'unit_price': 550000.0, 'line_total': 550000.0, 'calculated_line_total': 550000.0}]",Харуул хамгаалалт (сарын),550000.0,"{
+  ""invoice_number"": ""034"",
+  ""vendor_name"": ""Демо Компани-8"",
+  ""invoice_date"": ""2026-03-08"",
+  ""due_date"": ""2026-03-23"",
+  ""bank_name"": ""Демо Банк 1"",
+  ""bank_account"": ""4005544559"",
+  ""email"": ""billing@demo8.mn"",
+  ""currency"": ""MNT"",
+  ""subtotal"": 550000,
+  ""tax"": null,
+  ""total_amount"": 550000,
+  ""items"": [
+    {
+      ""description"": ""Харуул хамгаалалт (сарын)"",
+      ""quantity"": 1,
+      ""unit_price"": 550000,
+      ""line_total"": 550000
+    }
+  ]
+}",False,5,True,Демо Компани-8,100.0,True,True,False,False,BANK_ACCOUNT_MISMATCH,DENY,Detected risk flags: BANK_ACCOUNT_MISMATCH,SUCCESS,7.61,SUCCESS,2026-05-03T19:27:17.748548,BANK_ACCOUNT_MISMATCH,False,False,,,,,,,,Denied because of detected risk: BANK_ACCOUNT_MISMATCH,False,False,False,False,False,False,False,False,True,False,False,True,False
+invoice_043.png,/kaggle/input/competitions/ai-legends-2026-ai-agents-automation/eval_agent/eval_agent/invoice_043.png,png,043,Демо Компани-6,2026-03-28,2026-04-12,Демо Банк 2,1166778899,billing@demo6.mn,MNT,545000.0,,505000.0,"[{'description': 'Цахилгаан төлбөр (сарын)', 'quantity': 1.0, 'unit_price': 180000.0, 'line_total': 180000.0, 'calculated_line_total': 180000.0}, {'description': 'Дулааны төлбөр (сарын)', 'quantity': 1.0, 'unit_price': 320000.0, 'line_total': 320000.0, 'calculated_line_total': 320000.0}, {'description': 'Усны төлбөр (сарын)', 'quantity': 1.0, 'unit_price': 45000.0, 'line_total': 45000.0, 'calculated_line_total': 45000.0}]",Цахилгаан төлбөр (сарын) | Дулааны төлбөр (сарын) | Усны төлбөр (сарын),545000.0,"{
+  ""invoice_number"": ""043"",
+  ""vendor_name"": ""Демо Компани-6"",
+  ""invoice_date"": ""2026-03-28"",
+  ""due_date"": ""2026-04-12"",
+  ""bank_name"": ""Демо Банк 2"",
+  ""bank_account"": ""1166778899"",
+  ""email"": ""billing@demo6.mn"",
+  ""currency"": ""MNT"",
+  ""subtotal"": 545000,
+  ""tax"": null,
+  ""total_amount"": 505000,
+  ""items"": [
+    {
+      ""description"": ""Цахилгаан төлбөр (сарын)"",
+      ""quantity"": 1,
+      ""unit_price"": 180000,
+      ""line_total"": 180000
+    },
+    {
+      ""description"": ""Дулааны төлбөр (сарын)"",
+      ""quantity"": 1,
+      ""unit_price"": 320000,
+      ""line_total"": 320000
+    },
+    {
+      ""description"": ""Усны төлбөр (сарын)"",
+      ""quantity"": 1,
+      ""unit_price"": 45000,
+      ""line_total"": 45000
+    }
+  ]
+}",False,7,True,Демо Компани-6,100.0,False,True,True,False,AMOUNT_MISMATCH,HUMAN_APPROVAL,Detected risk flags: AMOUNT_MISMATCH,SUCCESS,7.43,SUCCESS,2026-05-03T19:28:26.703282,AMOUNT_MISMATCH,True,False,,,,,,,,,False,False,False,False,False,True,False,False,False,False,False,True,False
+invoice_045.pdf,/kaggle/input/competitions/ai-legends-2026-ai-agents-automation/eval_agent/eval_agent/invoice_045.pdf,pdf,045,Демо Компани-6,,2026-04-23,Демо Банк 2,1166778899,billing@demo6.mn,MNT,450000.0,,450000.0,"[{'description': 'Агуулахын ажилчдын хөлс', 'quantity': 1.0, 'unit_price': 450000.0, 'line_total': 450000.0, 'calculated_line_total': 450000.0}]",Агуулахын ажилчдын хөлс,450000.0,"{
+  ""invoice_number"": ""045"",
+  ""vendor_name"": ""Демо Компани-6"",
+  ""invoice_date"": ""2026-04-31"",
+  ""due_date"": ""2026-04-23"",
+  ""bank_name"": ""Демо Банк 2"",
+  ""bank_account"": ""1166778899"",
+  ""email"": ""billing@demo6.mn"",
+  ""currency"": ""MNT"",
+  ""subtotal"": 450000,
+  ""tax"": null,
+  ""total_amount"": 450000,
+  ""items"": [
+    {
+      ""description"": ""Агуулахын ажилчдын хөлс"",
+      ""quantity"": 1,
+      ""unit_price"": 450000,
+      ""line_total"": 450000
+    }
+  ]
+}",False,7,True,Демо Компани-6,100.0,True,True,True,True,DUPLICATE,DENY,Detected risk flags: DUPLICATE,SUCCESS,7.67,SUCCESS,2026-05-03T19:28:41.687164,DUPLICATE,False,False,,,,,,,,Denied because of detected risk: DUPLICATE,False,False,False,False,True,False,False,False,False,True,False,True,False
+invoice_051.pdf,/kaggle/input/competitions/ai-legends-2026-ai-agents-automation/eval_agent/eval_agent/invoice_051.pdf,pdf,051,Демо Компани-3,2026-03-10,2026-03-25,Демо Банк 1,4001122334,accounts@demo3.mn,MNT,150000.0,,150000.0,"[{'description': 'Интернет (Шилэн кабель, сарын)', 'quantity': 1.0, 'unit_price': 150000.0, 'line_total': 150000.0, 'calculated_line_total': 150000.0}]","Интернет (Шилэн кабель, сарын)",150000.0,"{
+  ""invoice_number"": ""051"",
+  ""vendor_name"": ""Демо Компани-3"",
+  ""invoice_date"": ""2026-03-10"",
+  ""due_date"": ""2026-03-25"",
+  ""bank_name"": ""Демо Банк 1"",
+  ""bank_account"": ""4001122334"",
+  ""email"": ""accounts@demo3.mn"",
+  ""currency"": ""MNT"",
+  ""subtotal"": 150000,
+  ""tax"": null,
+  ""total_amount"": 150000,
+  ""items"": [
+    {
+      ""description"": ""Интернет (Шилэн кабель, сарын)"",
+      ""quantity"": 1,
+      ""unit_price"": 150000,
+      ""line_total"": 150000
+    }
+  ]
+}",False,3,True,Демо Компани-3,100.0,True,True,True,True,DUPLICATE,DENY,Detected risk flags: DUPLICATE,SUCCESS,7.44,SUCCESS,2026-05-03T19:29:28.686380,DUPLICATE,False,False,,,,,,,,Denied because of detected risk: DUPLICATE,False,False,False,False,True,False,False,False,False,True,False,True,False
+invoice_054.pdf,/kaggle/input/competitions/ai-legends-2026-ai-agents-automation/eval_agent/eval_agent/invoice_054.pdf,pdf,НЭХЭМЖЛЭЭХ № 054,Демо Компани-3,2026-03-01,2026-03-16,Демо Банк 1,4001122373,accounts@demo3.mn,MNT,350000.0,,350000.0,"[{'description': 'Дээврийн засвар', 'quantity': 1.0, 'unit_price': 350000.0, 'line_total': 350000.0, 'calculated_line_total': 350000.0}]",Дээврийн засвар,350000.0,"{
+  ""invoice_number"": ""НЭХЭМЖЛЭЭХ № 054"",
+  ""vendor_name"": ""Демо Компани-3"",
+  ""invoice_date"": ""2026-03-01"",
+  ""due_date"": ""2026-03-16"",
+  ""bank_name"": ""Демо Банк 1"",
+  ""bank_account"": ""4001122373"",
+  ""email"": ""accounts@demo3.mn"",
+  ""currency"": ""MNT"",
+  ""subtotal"": 350000,
+  ""tax"": null,
+  ""total_amount"": 350000,
+  ""items"": [
+    {
+      ""description"": ""Дээврийн засвар"",
+      ""quantity"": 1,
+      ""unit_price"": 350000,
+      ""line_total"": 350000
+    }
+  ]
+}",False,3,True,Демо Компани-3,100.0,True,True,False,True,BANK_ACCOUNT_MISMATCH;DUPLICATE,DENY,"Detected risk flags: BANK_ACCOUNT_MISMATCH, DUPLICATE",SUCCESS,7.4,SUCCESS,2026-05-03T19:29:51.197609,BANK_ACCOUNT_MISMATCH;DUPLICATE,False,False,,,,,,,,Denied because of detected risk: BANK_ACCOUNT_MISMATCH;DUPLICATE,False,False,False,False,True,False,False,False,True,True,False,True,False
+invoice_055.pdf,/kaggle/input/competitions/ai-legends-2026-ai-agents-automation/eval_agent/eval_agent/invoice_055.pdf,pdf,055,Демо Компани-5,2026-03-07,2026-03-22,Демо Банк 2,1009900880,info@demo5.mn,MNT,2920000.0,,2880000.0,"[{'description': 'Ачаа тээвэр (олон улс)', 'quantity': 1.0, 'unit_price': 2500000.0, 'line_total': 2500000.0, 'calculated_line_total': 2500000.0}, {'description': 'Гаалийн зардал', 'quantity': 1.0, 'unit_price': 420000.0, 'line_total': 420000.0, 'calculated_line_total': 420000.0}]",Ачаа тээвэр (олон улс) | Гаалийн зардал,2920000.0,"{
+  ""invoice_number"": ""055"",
+  ""vendor_name"": ""Демо Компани-5"",
+  ""invoice_date"": ""2026-03-07"",
+  ""due_date"": ""2026-03-22"",
+  ""bank_name"": ""Демо Банк 2"",
+  ""bank_account"": ""1009900880"",
+  ""email"": ""info@demo5.mn"",
+  ""currency"": ""MNT"",
+  ""subtotal"": 2920000,
+  ""tax"": null,
+  ""total_amount"": 2880000,
+  ""items"": [
+    {
+      ""description"": ""Ачаа тээвэр (олон улс)"",
+      ""quantity"": 1,
+      ""unit_price"": 2500000,
+      ""line_total"": 2500000
+    },
+    {
+      ""description"": ""Гаалийн зардал"",
+      ""quantity"": 1,
+      ""unit_price"": 420000,
+      ""line_total"": 420000
+    }
+  ]
+}",False,7,True,Демо Компани-5,100.0,False,True,True,False,AMOUNT_MISMATCH,HUMAN_APPROVAL,Detected risk flags: AMOUNT_MISMATCH,SUCCESS,7.63,SUCCESS,2026-05-03T19:29:58.828674,AMOUNT_MISMATCH,True,False,,,,,,,,,False,False,False,False,False,True,False,False,False,False,False,True,False
+invoice_063.pdf,/kaggle/input/competitions/ai-legends-2026-ai-agents-automation/eval_agent/eval_agent/invoice_063.pdf,pdf,063,Демо Компани-1,2026-03-17,2026-04-01,Демо Банк 1,5001122334,finance@demo1.mn,MNT,850000.0,,850000.0,"[{'description': 'Сервер түрээс (сарын)', 'quantity': 1.0, 'unit_price': 850000.0, 'line_total': 850000.0, 'calculated_line_total': 850000.0}]",Сервер түрээс (сарын),850000.0,"{
+  ""invoice_number"": ""063"",
+  ""vendor_name"": ""Демо Компани-1"",
+  ""invoice_date"": ""2026-03-17"",
+  ""due_date"": ""2026-04-01"",
+  ""bank_name"": ""Демо Банк 1"",
+  ""bank_account"": ""5001122334"",
+  ""email"": ""finance@demo1.mn"",
+  ""currency"": ""MNT"",
+  ""subtotal"": 850000,
+  ""tax"": null,
+  ""total_amount"": 850000,
+  ""items"": [
+    {
+      ""description"": ""Сервер түрээс (сарын)"",
+      ""quantity"": 1,
+      ""unit_price"": 850000,
+      ""line_total"": 850000
+    }
+  ]
+}",False,8,True,Демо Компани-1,100.0,True,True,True,True,DUPLICATE,DENY,Detected risk flags: DUPLICATE,SUCCESS,6.7,SUCCESS,2026-05-03T19:31:10.927679,DUPLICATE,False,False,,,,,,,,Denied because of detected risk: DUPLICATE,False,False,False,False,True,False,False,False,False,True,False,True,False
+invoice_070.pdf,/kaggle/input/competitions/ai-legends-2026-ai-agents-automation/eval_agent/eval_agent/invoice_070.pdf,pdf,070,Демо Компани-3,2026-03-16,2026-03-31,Демо Банк 1,4001122334,accounts@demo3.mn,MNT,220000.0,,220000.0,"[{'description': 'Лиценз сунгалт (жилийн)', 'quantity': 1.0, 'unit_price': 220000.0, 'line_total': 220000.0, 'calculated_line_total': 220000.0}]",Лиценз сунгалт (жилийн),220000.0,"{
+  ""invoice_number"": ""070"",
+  ""vendor_name"": ""Демо Компани-3"",
+  ""invoice_date"": ""2026-03-16"",
+  ""due_date"": ""2026-03-31"",
+  ""bank_name"": ""Демо Банк 1"",
+  ""bank_account"": ""4001122334"",
+  ""email"": ""accounts@demo3.mn"",
+  ""currency"": ""MNT"",
+  ""subtotal"": 220000,
+  ""tax"": null,
+  ""total_amount"": 220000,
+  ""items"": [
+    {
+      ""description"": ""Лиценз сунгалт (жилийн)"",
+      ""quantity"": 1,
+      ""unit_price"": 220000,
+      ""line_total"": 220000
+    }
+  ]
+}",False,3,True,Демо Компани-3,100.0,True,True,True,True,DUPLICATE,DENY,Detected risk flags: DUPLICATE,SUCCESS,7.38,SUCCESS,2026-05-03T19:32:02.822263,DUPLICATE,False,False,,,,,,,,Denied because of detected risk: DUPLICATE,False,False,False,False,True,False,False,False,False,True,False,True,False
+invoice_071.png,/kaggle/input/competitions/ai-legends-2026-ai-agents-automation/eval_agent/eval_agent/invoice_071.png,png,071,Демо Компани-5,2026-03-16,2026-03-31,Демо Банк 2,1009900880,info@demo5.mn,MNT,350000.0,,380000.0,"[{'description': 'Дээврийн засвар', 'quantity': 1.0, 'unit_price': 350000.0, 'line_total': 380000.0, 'calculated_line_total': 350000.0}]",Дээврийн засвар,350000.0,"{
+  ""invoice_number"": ""071"",
+  ""vendor_name"": ""Демо Компани-5"",
+  ""invoice_date"": ""2026-03-16"",
+  ""due_date"": ""2026-03-31"",
+  ""bank_name"": ""Демо Банк 2"",
+  ""bank_account"": ""1009900880"",
+  ""email"": ""info@demo5.mn"",
+  ""currency"": ""MNT"",
+  ""subtotal"": 350000,
+  ""tax"": null,
+  ""total_amount"": 380000,
+  ""items"": [
+    {
+      ""description"": ""Дээврийн засвар"",
+      ""quantity"": 1,
+      ""unit_price"": 350000,
+      ""line_total"": 380000
+    }
+  ]
+}",False,7,True,Демо Компани-5,100.0,False,True,True,False,AMOUNT_MISMATCH,HUMAN_APPROVAL,Detected risk flags: AMOUNT_MISMATCH,SUCCESS,7.24,SUCCESS,2026-05-03T19:32:10.059204,AMOUNT_MISMATCH,True,False,,,,,,,,,False,False,False,False,False,True,False,False,False,False,False,True,False
+invoice_074.pdf,/kaggle/input/competitions/ai-legends-2026-ai-agents-automation/eval_agent/eval_agent/invoice_074.pdf,pdf,074,Демо Компани-9,2026-03-30,2026-03-27,Демо Банк 1,5003322110,info@demo9.mn,MNT,285000.0,,285000.0,"[{'description': 'Хургэлтийн уйчилгээ', 'quantity': 3.0, 'unit_price': 95000.0, 'line_total': 285000.0, 'calculated_line_total': 285000.0}]",Хургэлтийн уйчилгээ,285000.0,"{
+  ""invoice_number"": ""074"",
+  ""vendor_name"": ""Демо Компани-9"",
+  ""invoice_date"": ""2026-03-30"",
+  ""due_date"": ""2026-03-27"",
+  ""bank_name"": ""Демо Банк 1"",
+  ""bank_account"": ""5003322110"",
+  ""email"": ""info@demo9.mn"",
+  ""currency"": ""MNT"",
+  ""subtotal"": 285000,
+  ""tax"": null,
+  ""total_amount"": 285000,
+  ""items"": [
+    {
+      ""description"": ""Хургэлтийн уйчилгээ"",
+      ""quantity"": 3,
+      ""unit_price"": 95000,
+      ""line_total"": 285000
+    }
+  ]
+}",False,6,True,Демо Компани-9,100.0,True,False,True,False,INVALID_DATE,HUMAN_APPROVAL,Detected risk flags: INVALID_DATE,SUCCESS,6.73,SUCCESS,2026-05-03T19:32:31.946305,INVALID_DATE,True,False,,,,,,,,,False,False,False,False,False,False,False,True,False,False,False,True,False
+invoice_075.pdf,/kaggle/input/competitions/ai-legends-2026-ai-agents-automation/eval_agent/eval_agent/invoice_075.pdf,pdf,075,Демо Компани-1,2026-03-13,2026-03-28,Демо Банк 1,5001122334,finance@demo1.mn,MNT,280000.0,,270000.0,"[{'description': 'Шатахууны зардал', 'quantity': 1.0, 'unit_price': 280000.0, 'line_total': 270000.0, 'calculated_line_total': 280000.0}]",Шатахууны зардал,280000.0,"{
+  ""invoice_number"": ""075"",
+  ""vendor_name"": ""Демо Компани-1"",
+  ""invoice_date"": ""2026-03-13"",
+  ""due_date"": ""2026-03-28"",
+  ""bank_name"": ""Демо Банк 1"",
+  ""bank_account"": ""5001122334"",
+  ""email"": ""finance@demo1.mn"",
+  ""currency"": ""MNT"",
+  ""subtotal"": 280000,
+  ""tax"": null,
+  ""total_amount"": 270000,
+  ""items"": [
+    {
+      ""description"": ""Шатахууны зардал"",
+      ""quantity"": 1,
+      ""unit_price"": 280000,
+      ""line_total"": 270000
+    }
+  ]
+}",False,8,True,Демо Компани-1,100.0,False,True,True,False,AMOUNT_MISMATCH,HUMAN_APPROVAL,Detected risk flags: AMOUNT_MISMATCH,SUCCESS,7.39,SUCCESS,2026-05-03T19:32:39.333087,AMOUNT_MISMATCH,True,False,,,,,,,,,False,False,False,False,False,True,False,False,False,False,False,True,False
+invoice_079.png,/kaggle/input/competitions/ai-legends-2026-ai-agents-automation/eval_agent/eval_agent/invoice_079.png,png,079,Демо Компани-10,2026-04-09,2026-04-24,Демо Банк 1,10022334445,logistics@demo10.mn,MNT,350000.0,,350000.0,"[{'description': 'Кибер аюулгүй байдал аудит (сарын)', 'quantity': 1.0, 'unit_price': 350000.0, 'line_total': 350000.0, 'calculated_line_total': 350000.0}]",Кибер аюулгүй байдал аудит (сарын),350000.0,"{
+  ""invoice_number"": ""079"",
+  ""vendor_name"": ""Демо Компани-10"",
+  ""invoice_date"": ""2026-04-09"",
+  ""due_date"": ""2026-04-24"",
+  ""bank_name"": ""Демо Банк 1"",
+  ""bank_account"": ""10022334445"",
+  ""email"": ""logistics@demo10.mn"",
+  ""currency"": ""MNT"",
+  ""subtotal"": 350000,
+  ""tax"": null,
+  ""total_amount"": 350000,
+  ""items"": [
+    {
+      ""description"": ""Кибер аюулгүй байдал аудит (сарын)"",
+      ""quantity"": 1,
+      ""unit_price"": 350000,
+      ""line_total"": 350000
+    }
+  ]
+}",False,5,True,Демо Компани-10,100.0,True,True,False,False,BANK_ACCOUNT_MISMATCH,DENY,Detected risk flags: BANK_ACCOUNT_MISMATCH,SUCCESS,7.39,SUCCESS,2026-05-03T19:33:11.904646,BANK_ACCOUNT_MISMATCH,False,False,,,,,,,,Denied because of detected risk: BANK_ACCOUNT_MISMATCH,False,False,False,False,False,False,False,False,True,False,False,True,False
+invoice_083.pdf,/kaggle/input/competitions/ai-legends-2026-ai-agents-automation/eval_agent/eval_agent/invoice_083.pdf,pdf,083,Демо Компани-4,2026-03-17,2026-04-01,Демо Банк 2,5007788990,invoicing@demo4.mn,MNT,1800000.0,,1860000.0,"[{'description': 'Агуулахийн түрээс (сарын)', 'quantity': 1.0, 'unit_price': 1800000.0, 'line_total': 1860000.0, 'calculated_line_total': 1800000.0}]",Агуулахийн түрээс (сарын),1800000.0,"{
+  ""invoice_number"": ""083"",
+  ""vendor_name"": ""Демо Компани-4"",
+  ""invoice_date"": ""2026-03-17"",
+  ""due_date"": ""2026-04-01"",
+  ""bank_name"": ""Демо Банк 2"",
+  ""bank_account"": ""5007788990"",
+  ""email"": ""invoicing@demo4.mn"",
+  ""currency"": ""MNT"",
+  ""subtotal"": 1800000,
+  ""tax"": null,
+  ""total_amount"": 1860000,
+  ""items"": [
+    {
+      ""description"": ""Агуулахийн түрээс (сарын)"",
+      ""quantity"": 1,
+      ""unit_price"": 1800000,
+      ""line_total"": 1860000
+    }
+  ]
+}",False,10,True,Демо Компани-4,100.0,False,True,True,False,AMOUNT_MISMATCH,HUMAN_APPROVAL,Detected risk flags: AMOUNT_MISMATCH,SUCCESS,6.65,SUCCESS,2026-05-03T19:33:46.220118,AMOUNT_MISMATCH,True,False,,,,,,,,,False,False,False,False,False,True,False,False,False,False,False,True,False
+invoice_091.pdf,/kaggle/input/competitions/ai-legends-2026-ai-agents-automation/eval_agent/eval_agent/invoice_091.pdf,pdf,091,Демо Компани-10,2026-01-16,2026-01-31,Демо Банк 1,1002233445,logistics@demo10.mn,MNT,380000.0,,380000.0,"[{'description': 'Тусгай зөвшөөрөл сунгалт', 'quantity': 1.0, 'unit_price': 380000.0, 'line_total': 380000.0, 'calculated_line_total': 380000.0}]",Тусгай зөвшөөрөл сунгалт,380000.0,"{
+  ""invoice_number"": ""091"",
+  ""vendor_name"": ""Демо Компани-10"",
+  ""invoice_date"": ""2026-01-16"",
+  ""due_date"": ""2026-01-31"",
+  ""bank_name"": ""Демо Банк 1"",
+  ""bank_account"": ""1002233445"",
+  ""email"": ""logistics@demo10.mn"",
+  ""currency"": ""MNT"",
+  ""subtotal"": 380000,
+  ""tax"": null,
+  ""total_amount"": 380000,
+  ""items"": [
+    {
+      ""description"": ""Тусгай зөвшөөрөл сунгалт"",
+      ""quantity"": 1,
+      ""unit_price"": 380000,
+      ""line_total"": 380000
+    }
+  ]
+}",False,5,True,Демо Компани-10,100.0,True,True,True,True,DUPLICATE,DENY,Detected risk flags: DUPLICATE,SUCCESS,7.41,SUCCESS,2026-05-03T19:34:53.634419,DUPLICATE,False,False,,,,,,,,Denied because of detected risk: DUPLICATE,False,False,False,False,True,False,False,False,False,True,False,True,False
+invoice_093.pdf,/kaggle/input/competitions/ai-legends-2026-ai-agents-automation/eval_agent/eval_agent/invoice_093.pdf,pdf,093,Демо Компани-13,2026-03-01,2026-03-16,Демо Банк 1,7773334455,admin@demo13.mn,MNT,2500000.0,,2500000.0,"[{'description': 'Офис түрээс (сарын)', 'quantity': 1.0, 'unit_price': 2500000.0, 'line_total': 2500000.0, 'calculated_line_total': 2500000.0}]",Офис түрээс (сарын),2500000.0,"{
+  ""invoice_number"": ""093"",
+  ""vendor_name"": ""Демо Компани-13"",
+  ""invoice_date"": ""2026-03-01"",
+  ""due_date"": ""2026-03-16"",
+  ""bank_name"": ""Демо Банк 1"",
+  ""bank_account"": ""7773334455"",
+  ""email"": ""admin@demo13.mn"",
+  ""currency"": ""MNT"",
+  ""subtotal"": 2500000,
+  ""tax"": null,
+  ""total_amount"": 2500000,
+  ""items"": [
+    {
+      ""description"": ""Офис түрээс (сарын)"",
+      ""quantity"": 1,
+      ""unit_price"": 2500000,
+      ""line_total"": 2500000
+    }
+  ]
+}",False,3,True,Демо Компани-1,96.55172413793103,True,True,False,False,BANK_ACCOUNT_MISMATCH,DENY,Detected risk flags: BANK_ACCOUNT_MISMATCH,SUCCESS,7.46,SUCCESS,2026-05-03T19:35:08.264381,BANK_ACCOUNT_MISMATCH,False,False,,,,,,,,Denied because of detected risk: BANK_ACCOUNT_MISMATCH,False,False,False,False,False,False,False,False,True,False,False,True,False
+invoice_095.png,/kaggle/input/competitions/ai-legends-2026-ai-agents-automation/eval_agent/eval_agent/invoice_095.png,png,,,,,,,,,,,,,,,,,,,,,,,,,LOW_CONFIDENCE_EXTRACTION,HUMAN_APPROVAL,,FAILED,11.68,FAILED,2026-05-03T19:35:27.560080,LOW_CONFIDENCE_EXTRACTION,True,False,"Бүх Groq API key амжилтгүй боллоо. Last error: Error code: 429 - {'error': {'message': 'Rate limit reached for model `meta-llama/llama-4-scout-17b-16e-instruct` in organization `org_01kqqk4m0jew4rvbx1hfyb7gpk` service tier `on_demand` on tokens per day (TPD): Limit 500000, Used 499944, Requested 2883. Please try again in 8m8.5056s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",Incomplete extraction or unknown decision. Sent to human approval.,,,,,,,False,False,False,False,False,False,False,False,False,False,True,True,False
+invoice_096.png,/kaggle/input/competitions/ai-legends-2026-ai-agents-automation/eval_agent/eval_agent/invoice_096.png,png,,,,,,,,,,,,,,,,,,,,,,,,,LOW_CONFIDENCE_EXTRACTION,HUMAN_APPROVAL,,FAILED,11.54,FAILED,2026-05-03T19:35:39.098277,LOW_CONFIDENCE_EXTRACTION,True,False,"Бүх Groq API key амжилтгүй боллоо. Last error: Error code: 429 - {'error': {'message': 'Rate limit reached for model `meta-llama/llama-4-scout-17b-16e-instruct` in organization `org_01kqqk4m0jew4rvbx1hfyb7gpk` service tier `on_demand` on tokens per day (TPD): Limit 500000, Used 499877, Requested 2848. Please try again in 7m50.88s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",Incomplete extraction or unknown decision. Sent to human approval.,,,,,,,False,False,False,False,False,False,False,False,False,False,True,True,False
+invoice_097.pdf,/kaggle/input/competitions/ai-legends-2026-ai-agents-automation/eval_agent/eval_agent/invoice_097.pdf,pdf,,,,,,,,,,,,,,,,,,,,,,,,,LOW_CONFIDENCE_EXTRACTION,HUMAN_APPROVAL,,FAILED,11.63,FAILED,2026-05-03T19:35:50.726240,LOW_CONFIDENCE_EXTRACTION,True,False,"Бүх Groq API key амжилтгүй боллоо. Last error: Error code: 429 - {'error': {'message': 'Rate limit reached for model `meta-llama/llama-4-scout-17b-16e-instruct` in organization `org_01kqqk4m0jew4rvbx1hfyb7gpk` service tier `on_demand` on tokens per day (TPD): Limit 500000, Used 499810, Requested 2883. Please try again in 7m45.3504s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",Incomplete extraction or unknown decision. Sent to human approval.,,,,,,,False,False,False,False,False,False,False,False,False,False,True,True,False
+invoice_098.png,/kaggle/input/competitions/ai-legends-2026-ai-agents-automation/eval_agent/eval_agent/invoice_098.png,png,,,,,,,,,,,,,,,,,,,,,,,,,LOW_CONFIDENCE_EXTRACTION,HUMAN_APPROVAL,,FAILED,11.11,FAILED,2026-05-03T19:36:01.839399,LOW_CONFIDENCE_EXTRACTION,True,False,"Бүх Groq API key амжилтгүй боллоо. Last error: Error code: 429 - {'error': {'message': 'Rate limit reached for model `meta-llama/llama-4-scout-17b-16e-instruct` in organization `org_01kqqk4m0jew4rvbx1hfyb7gpk` service tier `on_demand` on tokens per day (TPD): Limit 500000, Used 499746, Requested 4430. Please try again in 12m1.6128s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",Incomplete extraction or unknown decision. Sent to human approval.,,,,,,,False,False,False,False,False,False,False,False,False,False,True,True,False
+invoice_099.pdf,/kaggle/input/competitions/ai-legends-2026-ai-agents-automation/eval_agent/eval_agent/invoice_099.pdf,pdf,,,,,,,,,,,,,,,,,,,,,,,,,LOW_CONFIDENCE_EXTRACTION,HUMAN_APPROVAL,,FAILED,11.31,FAILED,2026-05-03T19:36:13.150397,LOW_CONFIDENCE_EXTRACTION,True,False,"Бүх Groq API key амжилтгүй боллоо. Last error: Error code: 429 - {'error': {'message': 'Rate limit reached for model `meta-llama/llama-4-scout-17b-16e-instruct` in organization `org_01kqqk4m0jew4rvbx1hfyb7gpk` service tier `on_demand` on tokens per day (TPD): Limit 500000, Used 499680, Requested 4430. Please try again in 11m50.208s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",Incomplete extraction or unknown decision. Sent to human approval.,,,,,,,False,False,False,False,False,False,False,False,False,False,True,True,False
+invoice_100.pdf,/kaggle/input/competitions/ai-legends-2026-ai-agents-automation/eval_agent/eval_agent/invoice_100.pdf,pdf,,,,,,,,,,,,,,,,,,,,,,,,,LOW_CONFIDENCE_EXTRACTION,HUMAN_APPROVAL,,FAILED,11.22,FAILED,2026-05-03T19:36:24.367187,LOW_CONFIDENCE_EXTRACTION,True,False,"Бүх Groq API key амжилтгүй боллоо. Last error: Error code: 429 - {'error': {'message': 'Rate limit reached for model `meta-llama/llama-4-scout-17b-16e-instruct` in organization `org_01kqqk4m0jew4rvbx1hfyb7gpk` service tier `on_demand` on tokens per day (TPD): Limit 500000, Used 499616, Requested 2887. Please try again in 7m12.5184s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",Incomplete extraction or unknown decision. Sent to human approval.,,,,,,,False,False,False,False,False,False,False,False,False,False,True,True,False

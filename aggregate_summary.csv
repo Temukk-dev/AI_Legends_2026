@@ -1,0 +1,2 @@
+﻿total_invoices,correct_invoices,clean_invoices,suspicious_invoices,failed_files,auto_post_count,human_approval_count,deny_count,duplicate_count,amount_mismatch_count,unregistered_vendor_count,invalid_date_count,bank_account_mismatch_count,image_invoice_count,pdf_invoice_count,handwritten_image_invoice_count
+100,68,68,32,6,68,15,17,10,6,0,3,8,30,70,0
